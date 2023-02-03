@@ -1,0 +1,72 @@
+<html lang="">
+
+<body>
+<h1> Bestilling av kinobilletter</h1>
+<table>
+
+    <tr>
+        <td> <label for="film">Velg en film: </label></td>
+        <td> <select id="film">
+            <!--Mulighet til å velge mellom 3 filmer-->
+            <option value = ""> Velg film her </option>
+            <option value="Avatar">Avatar</option>
+            <option value="Lord of The Rings: Ringenes Brorskap">Lord of The Rings: Ringenes Brorskap</option>
+            <option value="Harry Potter og De Vises Stein">Harry Potter og De Vises Stein</option>
+        </select>
+        </td>
+        <td><label id="feilmeldingfilm"style = "color: red"></label></td>
+        </tr>
+
+    <!--Mulighet til å velge antall billetter-->
+    <tr><td> <label for="ticketCount">Antall billetter:</label> </td>
+        <td> <input type = "number" id="ticketCount" /> </td>
+        <td id="feilmeldingticketCount"style = "color: red"></td>
+    </tr>
+    
+    <!--Skrive inn navn-->
+<tr>
+    <td><label for="firstName">Fornavn:</label></td>
+    <td><input type = "text" id = "firstName" /></td>
+    <td> <label id="feilmeldingfirstName"style = "color: red"></label></td>
+</tr>
+
+    <!--Skrive inn etternavn-->
+<tr> <td><label for="lastName"> Etternavn:</label>  </td>
+     <td><input type="text" id="lastName" /></td>
+     <td > <label id="feilmeldinglastName"style = "color: red"></label> </td>
+</tr>
+
+    <!--Skrive inn telefonnr-->
+<tr> <td> <label for="phoneNumber">Telefonnummer:</label></td>
+     <td><input type = "tel" id="phoneNumber" /></td>
+     <td><label id="feilmeldingphoneNumber" style = "color: red"></label> </td>
+
+</tr>
+
+    <!--Skrive inn email-->
+<tr> <td> <label for="email">Epost:</label>  </td>
+    <td> <input type="email" id="email" /> </td>
+    <td> <label id="feilmeldingemail" style = "color: red"> </label> </td>
+
+</tr>
+</table>
+
+    <!--Avkrysningsboks for å akseptere vilkaar og beingelser for kjop av billetter-->
+<input type="checkbox" id="terms"/>
+<label for="terms">Jeg godtar vilkaarene og betingelsene for kjop av billetter hos HEKINO</label>
+
+<br>
+  <!--Knapp for å registrere kjøp-->
+   <button onclick="kjopbillett()">Kjop billett</button>
+
+
+ <h2>Antall billetter</h2>
+ <div id="orderList">
+ </div>
+
+<br><br>
+<button onclick="slettalle()">Slett alle billettene</button>
+<script src="JavaScriptoblig1test1.js"></script>
+
+</body>
+ </html>
